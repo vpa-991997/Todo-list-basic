@@ -1,0 +1,77 @@
+h1{
+	background: #2980b9;
+	color: white;
+	margin: 0;
+	padding: 10px 10px;
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: normal;
+}
+ul{
+	list-style: none;  /*remove the bullet point*/
+}
+body{
+	font-family:'DM Mono', monospace;  /*choose gradient colour*/
+	background: #ED4264;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFEDBC, #ED4264);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFEDBC, #ED4264); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+#container{
+
+	width: 300px;
+	
+	background: #f7f7f7;  /*lightgray*/
+	margin: 0 auto;
+	box-shadow: 0 0 3px rbga(0, 0, 0, 0.5);
+}
+.completed{
+	color: red;
+	text-decoration: line-through;
+}
+li{
+	color: #666;
+	background: #fff;
+	height: 40px;
+	line-height: 40px;
+	padding: 10px 10px;
+
+
+}
+li:nth-child(2n){
+	background: #f7f7f7;
+}
+input:focus {
+	background: #fff;
+	border: 3px solid #2980b9;
+	outline: none;
+}
+input{
+	font-size: 18px;
+	background: #f7f7f7;
+	width: 100%;
+	padding: 13px 13px 13px 20px;
+	box-sizing: border-box;   /*to make the box fit in the table*/
+	color: #666;
+	border: 3px solid rbga(0, 0, 0, 0);
+}
+.fa-american-sign-language-interpreting{
+	float: right;
+}
+span{
+	background: #e74c3c;
+	height: 40px;
+	margin-right: 20px;
+	text-align: center;
+	color: white;
+	width: 0;
+	display: inline-block;
+	transition: 0.2s linear;
+	opacity: 0;
+}
+li:hover span{   /* to remove the thing and then whenevr click it show up*/
+	width: 40px;
+	opacity: 1.2;
+}
+
